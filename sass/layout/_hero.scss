@@ -1,0 +1,27 @@
+/* Налаштування секції hero */
+.hero {
+    background-color: var(--color-dark);
+    text-align: center;
+    position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-overlay.jpg);  
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+   
+.hero_hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.45;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--color-white);
+margin-bottom: 30px;
+}

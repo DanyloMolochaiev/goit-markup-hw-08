@@ -1,0 +1,115 @@
+/* Header, footer background */
+.header {
+    border-bottom: 1px solid #ECECEC;
+   }
+
+.nav-list__link {
+    font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color-black);
+transition: color
+  var(--transition-timing-function);
+}
+
+    .nav-list__item {
+    position: relative;
+}
+
+.current {
+    color: var(--text-color-blue);
+}
+
+.nav-list__link.current::after {
+    content:'';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color:var(--text-color-blue);
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+    transition: background-color var(--transition-timing-function-close);
+    transition: color
+  var(--transition-timing-function);
+}
+
+.contact-list__link {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color-grey);
+align-items: center;
+  transition: color
+  var(--transition-timing-function);
+}
+
+.contact-list__icon {
+       fill: currentColor;
+    margin-right: 10px;
+      }
+
+.nav-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+&:hover, &:focus {
+    color: var(--text-color-blue);
+}    
+}
+
+.contact-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+
+&:hover, &:focus {
+    color: var(--text-color-blue);
+}
+}
+
+/* Налаштування main-nav */
+.header-container {
+    display: flex;
+    align-items: center;
+    }
+
+    .header-nav {
+        display: flex;
+align-items: center;
+    }
+
+/* Налаштування посилань сторінок header */
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-list .nav-list__item + .nav-list__item {
+        margin-left: 50px;
+        
+}
+
+
+
+/* Налаштування контактів header */
+.contact-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contact-list .contact-list__item + .contact-list__item {
+    margin-left: 50px;   
+}
+
+
+
+

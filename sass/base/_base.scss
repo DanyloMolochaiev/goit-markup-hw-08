@@ -1,0 +1,46 @@
+h1, h2, h3, h4, h5, h6,
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    background-color: var(--color-white);
+    color: var(--text-color-black);
+     font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+// Container
+.container {
+    width: 1200px;
+   margin: 0 auto;
+    padding: 0 15px;
+}

@@ -1,0 +1,46 @@
+/* Налаштування секції клієнтів */
+.customers__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-color-black);
+margin-bottom: 50px;
+}
+.customers__list {
+    display: flex;
+}
+
+
+.customers__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icons-color-grey);
+    border-color: var(--icons-color-grey);
+    border: 1px solid;
+border-radius: 4px;
+ transition: border-color
+  var(--transition-timing-function),
+  color
+  var(--transition-timing-function),
+  scale var(--transition-timing-function);
+
+ &:hover,
+&:focus {
+    color: var(--text-color-blue);
+    border-color: var(--text-color-blue);
+    transform: scale(1.05);
+}
+}
+
+.customers__icon {
+    fill: currentColor;
+}
+
+.customers__list .customers__item + .customers__item {
+   margin-left: 30px;
+}

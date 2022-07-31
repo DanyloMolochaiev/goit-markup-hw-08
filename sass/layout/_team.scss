@@ -1,0 +1,86 @@
+/* Налаштування секції team */
+.team {
+    background-color: var(--color-grey);
+    text-align: center;
+ }
+.team__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+.team__item {
+   display: block;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team__list {
+    display: flex;
+  }
+.team__list .team__item + .team__item {
+    margin-left: 30px;
+}
+.team__name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+ margin-bottom: 10px;
+}
+.team__spec {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--text-color-grey);
+margin-bottom: 16px;
+}
+.team__item {
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+
+.team__card {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.icons-set__icon {
+       width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+  
+.icons-set {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ }
+
+.icons-set_item:not(:first-child){
+    margin-left: 10px;
+}
+
+ .icons-set__link {
+     height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--icons-color-grey);
+      /* outline: 1px solid salmon; */
+       transition:  background-color
+  var(--transition-timing-function),
+  color
+  var(--transition-timing-function);
+
+&:hover,&:focus {
+    color: var(--color-white);
+    background-color: var(--text-color-blue);
+ }
+}
+
+
