@@ -1,46 +1,9 @@
-
-html {
-
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 h1, h2, h3, h4, h5, h6,
 p {
     margin: 0;
     font-style: normal;
     font-weight: 400;
 }
-
-%titel {
-  color: var(--titel-link-color);
-
-
-  font-family: 'Roboto';
-  font-style: normal;
-
-  font-weight: 700;
-  font-size: 28px;
-
-  @media screen and (max-width: 360px) {
-    font-size: calc(28px + (70 - 10)*((100vw - 360px) / (1200 - 360)));
-  }
-
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  @media screen and (max-width: 1199px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    line-height: 1.16;
-  }
-}
-
 
 img {
     display: block;
@@ -55,11 +18,6 @@ address {
 section {
     padding-top: 94px;
     padding-bottom: 94px;
-
-      @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 ul {
@@ -78,52 +36,11 @@ body {
      font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-    width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
 }
-
-body {
-
-  &.no-scroll {
-    height: 100vh;
-  overflow: auto;;
-  }
-
-  &.no-scroll--burger-menu {
- height: 100vh;
-  overflow: auto;
-  }
-
-  color: #757575;
-  background-color: #ffffff;
-  font-family: Roboto,
-  sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 
 // Container
 .container {
     width: 1200px;
    margin: 0 auto;
     padding: 0 15px;
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
-
 }
