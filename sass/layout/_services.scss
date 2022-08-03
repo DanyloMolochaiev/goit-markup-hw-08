@@ -39,4 +39,16 @@ margin-bottom: 50px;
 
 .services {
     padding-top: 0;
+      display: none;
 }
+
+@media screen and (min-width: 1200px) {
+  .services {
+    display: flex;
+  }
+}
+
+// .services_wrap {
+//   position: relative;
+//   width: 100%;
+// }

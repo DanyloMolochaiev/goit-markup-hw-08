@@ -42,7 +42,44 @@
             +38 096 111 11 11
         </a></li>
 </ul>
+<!-- vdsviwheiuvhiwuej -->
+ <button type="button" class="mob-menu-btn" data-menu-open>
+        <svg class="mob-menu-btn__icon" width="24" height="16">
+            <use href="./images/sprite_svg/project-icons.svg#icon-menu-mob-open"></use>
+        </svg>
+    </button>
+
 </div>
+
+<div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+            <div class="mob-menu-start">
+        <button type="button" class="mob-menu-close" data-menu-close>
+            <svg class="menu-close" width="11" height="11">
+                <use href="./images/sprite_svg/project-icons.svg#close-mob-btn"></use>
+            </svg>
+    </button>
+    <ul class="list mobile-menu">
+        <li class="mobile-menu__item"><a class="link mobile-menu__link current" href="./index.html">Студия</a></li>
+        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
+        <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Контакты</a></li>
+    </ul>
+    </div>
+    <div class="mob-menu-finish">
+    <ul class="list mob-contact-list">
+        <li class="mob-contact__tel"><a href="tel:+380961111111" class="mob-list__tel">+38 096 111 11 11</a></li>
+        <li class="mob-contact__mail"><a href="mailto:info@devstudio.com" class="mob-list__mail">info@devstudio.com</a></li>
+    </ul>
+    <ul class="list menu-social">
+        <li class="menu-social__list"><a href="" class="menu-social__link">Instagram</a></li>
+        <li class="menu-social__list"><a href="" class="menu-social__link">Twitter</a></li>
+        <li class="menu-social__list"><a href="" class="menu-social__link">Facebook</a></li>
+        <li class="menu-social__list"><a href="" class="menu-social__link">LinkedIn</a></li>
+    </ul>
+    </div>
+</div>
+</div>
+<!-- jdsivhwidhvuihweiuhjiuvhweiuuiw -->
     </header> 
         <main>
         <!-- Секція з банером і кнопкою -->
@@ -57,6 +94,7 @@
             <div class="container">
             <h2 class="visually-hidden">Наши особенности</h2> 
             <ul class="benefits_list">
+                <div class="benefits_block">
                 <li class="benefits_item">
                     <div class="benefits_icon-bg">
                     <svg aria-label="antenna" width="70" height="70">
@@ -66,15 +104,20 @@
                     <h3 class="benefits_title">Внимание к деталям</h3>
                     <p class="benefits_description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
+                </div>
+                 <div class="benefits_block">
                 <li class="benefits_item">
                     <div class="benefits_icon-bg">
                      <svg aria-label="clock" width="70" height="70">
                         <use href="./images/sprite_svg/project-icons.svg#icon-clock"></use>
                     </svg>
                     </div>
-                    <h3 class="benefits_title">Пунктуальность</h3>
-                    <p class="benefits_description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <h3 class="benefits_title">Пунктуальность
+                    </h3>
+                    <p class="benefits_description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>                
                 </li>
+                </div>
+                 <div class="benefits_block">
                 <li class="benefits_item">
                     <div class="benefits_icon-bg">
                      <svg aria-label="diagram" width="70" height="70">
@@ -84,6 +127,8 @@
                     <h3 class="benefits_title">Планирование</h3>
                     <p class="benefits_description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
+                </div>
+                <div class="benefits_block">
                 <li class="benefits_item">
                     <div class="benefits_icon-bg">
                      <svg aria-label="icon-astronaut" width="70" height="70">
@@ -93,6 +138,7 @@
                     <h3 class="benefits_title">Современные технологии</h3>
                     <p class="benefits_description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
+                </div>
             </ul>
             </div>
         </section>
@@ -102,33 +148,43 @@
             <h2 class="services_title">Чем мы занимаемся</h2>
             <ul class="services_list">
                 <li class="services_item">
-                    <img src="./images/box1.jpg" 
-                    alt="верстка сайтов"    
-                    width="370" 
-                    height="294"> 
+                     <div class="services_wrap">
+                    <picture>
+                        <source srcset="
+                        ../../images/img8/we-doing1.jpg 1x,
+                        ../../images/img8/we-doing1-2x.jpg 2x" media="(min-width: 1200px)">
+                        <img src="../../images/img8/we-doing1.jpg" alt="программирование"/>
+                        </picture>
                         <p class="services_desc">
               Десктопные приложения
             </p>
+            </div>
                 </li>
                 <li class="services_item">
-                    <img src="./images/box2.jpg" 
-                    alt="верстка мобильных приложений"
-                    width="370"
-                    height="294"
-                    > 
+                    <div class="services_wrap">
+                      <picture>
+                        <source srcset="
+                        ../../images/img8/we-doing2.jpg 1x,
+                        ../../images/img8/we-doing2-2x.jpg 2x" media="(min-width: 1200px)">
+                        <img src="../../images/img8/we-doing2.jpg" alt="программирование" />
+                    </picture>
                            <p class="services_desc">
                Мобильные приложения
                            </p>
+                           </div>
                 </li>
                 <li class="services_item">
-                    <img src="./images/box3.jpg" 
-                    alt="web дизайн"
-                    width="370"
-                    height="294"
-                    > 
+                     <div class="services_wrap">
+                   <picture>
+                    <source srcset="
+                    ../../images/img8/we-doing3.jpg 1x,
+                    ../../images/img8/we-doing3-2x.jpg 2x" media="(min-width: 1200px)">
+                    <img src="../../images/img8/we-doing3.jpg" alt="программирование" />
+                    </picture>
                 <p class="services_desc">
                Дизайнерские решения
             </p>
+            </div>
                 </li>
             </ul>
             </div>
@@ -139,9 +195,23 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/team/Igor_Demyanenko.jpg" 
+                     <picture>
+                        <source srcset="
+                        ../../images/img8/demianenco.jpg 1x,
+                        ../../images/img8/demianenco-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="
+                        ../../images/img8/demianenco-tab-1x.jpg 1x,
+                        ../../images/img8/demianenco-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="
+                        ../../images/img8/demianenco-mob-1x.jpg 1x,
+                        ../../images/img8/demianenco-mob-2x.jpg 2x"
+                        media="(max-width: 767px)"
+                        >
+                        <img src="../../images/img8/demianenco.jpg" alt="дизайнер"/>
+                    </picture>
+                    <!-- <img src="./images/team/Igor_Demyanenko.jpg" 
                     alt="Игорь Демьяненко Product Designer"
-                    width="270">
+                    width="270"> -->
                     <div class="team__card">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__spec">Product Designer</p>
@@ -178,9 +248,21 @@
                 </div>
           </li>
                 <li class="team__item">
-                    <img src="./images/team/Olga_Repina.jpg" 
+                     <picture>
+                        <source srcset="
+                        ../../images/img8/repina.jpg 1x,
+                       ../../images/img8/repina-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="
+                        ../../images/img8/repina-tab-1x.jpg 1x,
+                        ../../images/img8/repina-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="
+                        ../../images/img8/repina-mob-1x.jpg 1x,
+                        ../../images/img8/repina-mob-2x.jpg 2x" media="(max-width: 767px)">
+                        <img src="../../images/img8/repina.jpg" alt="разработчик" />
+                    </picture>
+                    <!-- <img src="./images/team/Olga_Repina.jpg" 
                     alt="Ольга Репина Frontend Developer"
-                    width="270">
+                    width="270"> -->
                     <div class="team__card">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__spec">Frontend Developer</p>
@@ -216,9 +298,21 @@
                     </ul>
 </div>                </li>
                 <li class="team__item">
-                    <img src="./images/team/Nikolay_Tarasov.jpg" 
+                         <picture>
+                        <source srcset="
+                        ../../images/img8/tarasov.jpg 1x,
+                        ../../images/img8/tarasov-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="
+                        ../../images/img8/tarasov-tab-1x.jpg 1x,
+                        ../../images/img8/tarasov-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="
+                        ../../images/img8/tarasov-mob-1x.jpg 1x,
+                        ../../images/img8/tarasov-mob-2x.jpg 2x" media="(max-width: 767px)">
+                        <img src="../../images/img8/tarasov.jpg" alt="маркетолог"/>
+                    </picture>
+                    <!-- <img src="./images/team/Nikolay_Tarasov.jpg" 
                     alt="Николай Тарасов Marketing"
-                    width="270">
+                    width="270"> -->
                     <div class="team__card">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p class="team__spec">Marketing</p>
@@ -254,9 +348,21 @@
                     </ul>
    </div>             </li>
                 <li class="team__item">
-                    <img src="./images/team/Mykhail_Ermakov.jpg" 
+                       <picture>
+                        <source srcset="
+                        ../../images/img8/ermacov.jpg 1x,
+                        ../../images/img8/ermacov-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="
+                        ../../images/img8/ermacov-tab-1x.jpg 1x,
+                        ../../images/img8/ermacov-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="
+                        ../../images/img8/ermacov-mob-1x.jpg 1x,
+                        ../../images/img8/ermacov-mob-2x.jpg 2x" media="(max-width: 767px)">
+                        <img src="../../images/img8/team4.jpg" alt="дизайнер" />
+                    </picture>
+                    <!-- <img src="./images/team/Mykhail_Ermakov.jpg" 
                     alt="Михаил Ермаков UI Designer"
-                    width="270">
+                    width="270"> -->
                     <div class="team__card">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p class="team__spec">UI Designer</p>
@@ -474,6 +580,7 @@
   </div>
 
   <script src="./modal.js"></script>
+  <script src="./menu.js"></script>
 
     </body>
 </html>
