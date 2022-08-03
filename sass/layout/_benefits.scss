@@ -53,6 +53,18 @@ width: 270px;
 .benefits_list {
     display: flex;
  }
+
+.benefits_list  {
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include desk {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
 .benefits_list .benefits_item + .benefits_item {
     margin-left: 30px;
 }
@@ -117,6 +129,45 @@ width: 270px;
   .benefits_block {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+  }
+}
+
+.benefits_block {
+  @include tab {
+    width: calc((100% - 2 * 15px) / 2);
+    &:nth-child(2n + 1) {
+      @include tab {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @include desk {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+}
+
+.benefits_item,
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+
+  @include tab {
+    text-align: left;
+  }
+
+  @include desk {
+    max-width: 270px;
+    margin-top: 30px;
   }
 }
 
